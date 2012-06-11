@@ -1,11 +1,7 @@
 packages = Array.new
 
 case node[:lsb][:codename]
-when "lucid"
-  packages |= %w/
-    postgresql-client-common
-  /
-when "precise"
+when "lucid", "precise"
   packages |= %w/
     postgresql-client-common
   /
